@@ -7,7 +7,7 @@
 Quick edit expression and save to file for after effects
 快速编辑表达式并储存为文件的 ae 脚本
 
-![](http://ww1.sinaimg.cn/large/006gWwF3gy1g5h3bmwehnj30gr09cweu.jpg)
+![CAFX](http://ww1.sinaimg.cn/large/006gWwF3gy1g5h3g7su41j30gn09a3yu.jpg)
 
 ## Script function 脚本功能
 
