@@ -119,7 +119,7 @@ module.exports = function() {
               alert(exp.loc(exp.folderExistsAlert))
               return
             }
-            exp.saveSetting('expressionFolder', this.text)
+            exp.expressionFolder = Folder(this.text)
           }
           break
         case 'cafx':
@@ -135,8 +135,9 @@ module.exports = function() {
     })
 
     win.onClose = function() {
-      if (exp.lang !== exp.getSetting('language')) {
+      if (exp.lang !== exp.getSetting('language') || exp.expressionFolder.fsName !== exp.getSetting('expressionFolder')) {
         exp.saveSetting('language', exp.lang)
+        exp.saveSetting('expressionFolder', exp.expressionFolder.fsName)
         if (exp.win instanceof Window) {
           exp.win.close()
           refreshExp()
