@@ -1,0 +1,56 @@
+{
+  "name": "expnotes",
+  "version": "1.0.0",
+  "description": "a script for adobe after effects to edit expression",
+  "main": "index.js",
+  "author": "yf",
+  "license": "Apache-2.0",
+  "scripts": {
+    "dev": "webpack --config ./build/webpack.dev.js --watch --progress --hide-modules",
+    "test": "webpack --config ./build/webpack.dev.js --progress --hide-modules",
+    "build": "cross-env NODE_ENV=production webpack --config ./build/webpack.prod.js --progress --hide-modules",
+    "lint": "eslint . --quiet",
+    "fix": "eslint . --fix --quiet"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yfsmallmoon/ExpNotes.git"
+  },
+  "keywords": [
+    "ae",
+    "ExpNotes",
+    "expression"
+  ],
+  "bugs": {
+    "url": "https://github.com/yfsmallmoon/ExpNotes/issues"
+  },
+  "homepage": "https://github.com/yfsmallmoon/ExpNotes#readme",
+  "devDependencies": {
+    "@babel/core": "^7.5.5",
+    "@babel/plugin-transform-runtime": "^7.5.0",
+    "@babel/preset-env": "^7.5.4",
+    "after-effects": "^0.4.15",
+    "babel-eslint": "^10.0.2",
+    "babel-loader": "^8.0.6",
+    "clean-webpack-plugin": "^3.0.0",
+    "cross-env": "^5.2.0",
+    "eslint": "^6.0.1",
+    "eslint-config-prettier": "^6.0.0",
+    "eslint-loader": "^2.2.1",
+    "eslint-plugin-prettier": "^3.1.0",
+    "file-loader": "^4.0.0",
+    "image-webpack-loader": "^5.0.0",
+    "osascript": "^1.2.0",
+    "prettier": "^1.18.2",
+    "standard": "^13.0.2",
+    "unicode-loader": "^1.0.7",
+    "url-loader": "^2.0.1",
+    "webpack": "^4.35.2",
+    "webpack-bundle-analyzer": "^3.3.2",
+    "webpack-cli": "^3.3.5",
+    "webpack-merge": "^4.2.1"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.5.4"
+  }
+}

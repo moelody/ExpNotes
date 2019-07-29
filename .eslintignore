@@ -1,0 +1,7 @@
+dist
+lib
+src/script
+temp
+build
+node_modules
+/*.js
