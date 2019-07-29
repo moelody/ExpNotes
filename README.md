@@ -2,18 +2,21 @@
 
 # ExpNotes
 
-## description 描述
+## Description 描述
 
 Quick edit expression and save to file for after effects
 快速编辑表达式并储存为文件的 ae 脚本
 
-## 脚本功能
+![](http://ww1.sinaimg.cn/large/006gWwF3gy1g5h3bmwehnj30gr09cweu.jpg)
+
+## Script function 脚本功能
 
 1. 快速对表达式文件夹进行增删存改等操作
 2. 快速导入导出属性表达式并优化，并能快速激活或禁用图层属性表达式
 3. 快速对 ae 工程 XMP 数据像笔记一样进行保存
+4. 支持中英文快速切换
 
-## 开发
+## Dev 开发
 
 - [x] Node.js
 - [x] Yarn.js
