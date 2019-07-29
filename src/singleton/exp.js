@@ -3,7 +3,7 @@ const request = require('src/https')
 
 const exp = new Root({
   scriptName: 'ExpNotes',
-  version: 'v' + process.env.VERSION,
+  version: process.env.VERSION,
   slash: '/'
 })
 

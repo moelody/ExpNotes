@@ -1646,7 +1646,7 @@ var request = __webpack_require__(4);
 
 var exp = new Root({
   scriptName: 'ExpNotes',
-  version: 'v' + "1.0.0",
+  version: "1.0.0",
   slash: '/'
 });
 exp.extend({
@@ -2480,8 +2480,8 @@ module.exports = function () {
       return string[exp.lang];
     },
     versionUpdateInfo: {
-      ch: "\u8868\u8FBE\u5F0F\u7B14\u8BB0\u672C " + exp.version + " @\u5FC6\u7897\u725B\u6742\u9762\n\n>> \u4F18\u5316\n\n",
-      en: "ExpNotes " + exp.version + " @yfsmallmoon\n                    \nNew Feature:\n      \n"
+      ch: "\u8868\u8FBE\u5F0F\u7B14\u8BB0\u672C v" + exp.version + " yfsmallmoon@\u5FC6\u7897\u725B\u6742\u9762\n\n\u6B22\u8FCE\u4F7F\u7528~~\uFF01\n\n",
+      en: "ExpNotes v" + exp.version + " yfsmallmoon@ywnz\n                    \nWelcome to use~!\n      \n"
     },
     nsPrefix: XMPMeta.getNamespaceURI('xmp'),
     schemaName: exp.getSetting('schemaName')
@@ -2581,10 +2581,6 @@ module.exports = function () {
     undoStr: {
       en: 'Cancel delete expression',
       ch: "\u64A4\u9500\u5220\u9664\u7684\u8868\u8FBE\u5F0F"
-    },
-    panelStr: {
-      en: 'need to reOpen script',
-      ch: "\u9700\u8981\u91CD\u65B0\u6253\u5F00\u811A\u672C"
     },
     advlistTip: {
       en: 'change mainPanel list then click can refresh this panel list catalogue',
@@ -2686,6 +2682,10 @@ module.exports = function () {
       en: 'Beauty Failed!',
       ch: "\u7F8E\u5316\u5931\u8D25"
     },
+    reloadFailed: {
+      en: "\u81EA\u52A8\u91CD\u8F7D\u5931\u8D25\uFF0C\u4F60\u6539\u8FC7\u811A\u672C\u540D\u5B57\u5427?",
+      ch: 'reload failed do you changed script name?'
+    },
     optionsErr: {
       en: 'Unknown options setting',
       ch: "\u672A\u77E5\u7684\u9009\u9879\u8BBE\u7F6E"
@@ -2718,8 +2718,8 @@ module.exports = function () {
       ch: "\u5347\u7EA7\u6210\u529F, \u8BF7\u91CD\u542F\u811A\u672C"
     },
     help: {
-      en: "Made by: yf\nE-mail: yfsmallmoon@gmail.com\nSource Code: github.com/liuyingxuanlv\n\n\u264Fswitch : quick switch XMP/File source mode\n\n\u264Fsave : quick save note\n\n\u264Frefresh : quick refresh note, shift: quick refresh list\n\n\u264Fcreate : quick add a note\uFF0Cctrl/cmd quick add a folder\uFF0Cshift advance add panel\n\n\u264Fdelete : quick delete a note\uFF0Cctrl/cmd quick delete a folder\uFF0Cadvance delete panel\n\n\u264Flist : auto refresh list and text content\n\n\u264Fsettings : support English/Chinese language switch, custom expressionFolder\n\n\u264Fhelp : mouse hover quick helptip\n\n\u264Frename : quick rename note or folder\n\n\u25B6beauty : beautify text area and your expressions\n\n\u25B6beautyOptions : custom your beautify options\n\n\u25B6pick : get the property\"s path\n\n\u25B6export : export the text to selected properties\n\n\u25B6import : import the property\"s expression to the text area\n\n\u25B6toggle : enable or disable your properties\" expressions\n\n\u25B6cancel : cancel your beauty or import operations(only once)\n\n",
-      ch: "\u4F5C\u8005: yf(\u5FC6\u7897\u725B\u6742\u9762)\n\u90AE\u7BB1: yfsmallmoon@gmail.com\n\u6E90\u7801\u6258\u7BA1\u5730\u5740: github.com/liuyingxuanlv\n\n\u264F\u5207\u6362 : \u5FEB\u901F\u5207\u6362XMP/\u6587\u4EF6\u8D44\u6E90\u6A21\u5F0F\n\n\u264F\u50A8\u5B58 : \u5FEB\u901F\u50A8\u5B58\u7B14\u8BB0\n\n\u264F\u5237\u65B0 : \u5FEB\u901F\u5237\u65B0\u7B14\u8BB0\uFF0Cshift\u5FEB\u901F\u5237\u65B0\u5217\u8868\n\n\u264F\u6DFB\u52A0 : \u5FEB\u901F\u6DFB\u52A0\u7B14\u8BB0\uFF0Cctrl/cmd\u5FEB\u901F\u6DFB\u52A0\u6587\u4EF6\u5939\uFF0Cshift\u9AD8\u7EA7\u6DFB\u52A0\u9762\u677F\n\n\u264F\u5220\u9664 : \u5FEB\u901F\u5220\u9664\u7B14\u8BB0\uFF0Cctrl/cmd\u5FEB\u901F\u5220\u9664\u6587\u4EF6\u5939\uFF0Cshift\u9AD8\u7EA7\u5220\u9664\u9762\u677F\n\n\u264F\u5217\u8868 : \u81EA\u52A8\u5237\u65B0\u5217\u8868\u548C\u6587\u5B57\u5185\u5BB9\n\n\u264F\u8BBE\u7F6E : \u652F\u6301\u4E2D\u82F1\u754C\u9762\u5207\u6362\uFF0C\u81EA\u5B9A\u4E49\u5207\u6362\u8868\u8FBE\u5F0F\u6587\u4EF6\u5939\n\n\u264F\u5E2E\u52A9 : \u60AC\u505C\u5FEB\u901F\u67E5\u770B\u63D0\u793A\n\n\u264F\u91CD\u547D\u540D : \u5FEB\u901F\u91CD\u547D\u540D\u7B14\u8BB0\u6216\u6587\u4EF6\u5939\n\n\u25B6\u7F8E\u5316 : \u83B7\u53D6\u5C5E\u6027\u8DEF\u5F84\u4EE3\u7801\n\n\u25B6\u7F8E\u5316\u9009\u9879 : \u81EA\u5B9A\u4E49\u7F8E\u5316\u89C4\u5219\n\n\u25B6\u62FE\u53D6 : \u83B7\u53D6\u5C5E\u6027\u8DEF\u5F84\u4EE3\u7801\n\n\u25B6\u5BFC\u51FA : \u5BFC\u51FA\u4EE3\u7801\u5230\u6240\u9009\u5C5E\u6027\n\n\u25B6\u5BFC\u5165 : \u5BFC\u5165\u5C5E\u6027\u8868\u8FBE\u5F0F\n\n\u25B6\u5207\u6362 : \u6FC0\u6D3B\u6216\u7981\u7528\u6240\u9009\u5C5E\u6027\u7684\u8868\u8FBE\u5F0F\n\n\u25B6\u64A4\u9500 : \u64A4\u9500\u7F8E\u5316\u6216\u5BFC\u5165\u64CD\u4F5C(\u4EC5\u4E00\u6B21)\n"
+      en: "Made by: yf\nE-mail: yfsmallmoon@gmail.com\nSource Code: github.com/liuyingxuanlv\n\nchange language support autoreload\n\n\u264Fswitch : quick switch XMP/File source mode\n\n\u264Fsave : quick save note\n\n\u264Frefresh : quick refresh note, shift: quick refresh list\n\n\u264Fcreate : quick add a note\uFF0Cctrl/cmd quick add a folder\uFF0Cshift advance add panel\n\n\u264Fdelete : quick delete a note\uFF0Cctrl/cmd quick delete a folder\uFF0Cadvance delete panel\n\n\u264Flist : auto refresh list and text content\n\n\u264Fsettings : support English/Chinese language switch, custom expressionFolder\n\n\u264Fhelp : mouse hover quick helptip\n\n\u264Frename : quick rename note or folder\n\n\u25B6beauty : beautify text area and your expressions\n\n\u25B6beautyOptions : custom your beautify options\n\n\u25B6pick : get the property\"s path\n\n\u25B6export : export the text to selected properties\n\n\u25B6import : import the property\"s expression to the text area\n\n\u25B6toggle : enable or disable your properties\" expressions\n\n\u25B6cancel : cancel your beauty or import operations(only once)\n\n",
+      ch: "\u4F5C\u8005: yf(\u5FC6\u7897\u725B\u6742\u9762)\n\u90AE\u7BB1: yfsmallmoon@gmail.com\n\u6E90\u7801\u6258\u7BA1\u5730\u5740: github.com/liuyingxuanlv\n\n\u6539\u53D8\u8BED\u8A00\u652F\u6301\u81EA\u52A8\u91CD\u8F7D\n\n\u264F\u5207\u6362 : \u5FEB\u901F\u5207\u6362XMP/\u6587\u4EF6\u8D44\u6E90\u6A21\u5F0F\n\n\u264F\u50A8\u5B58 : \u5FEB\u901F\u50A8\u5B58\u7B14\u8BB0\n\n\u264F\u5237\u65B0 : \u5FEB\u901F\u5237\u65B0\u7B14\u8BB0\uFF0Cshift\u5FEB\u901F\u5237\u65B0\u5217\u8868\n\n\u264F\u6DFB\u52A0 : \u5FEB\u901F\u6DFB\u52A0\u7B14\u8BB0\uFF0Cctrl/cmd\u5FEB\u901F\u6DFB\u52A0\u6587\u4EF6\u5939\uFF0Cshift\u9AD8\u7EA7\u6DFB\u52A0\u9762\u677F\n\n\u264F\u5220\u9664 : \u5FEB\u901F\u5220\u9664\u7B14\u8BB0\uFF0Cctrl/cmd\u5FEB\u901F\u5220\u9664\u6587\u4EF6\u5939\uFF0Cshift\u9AD8\u7EA7\u5220\u9664\u9762\u677F\n\n\u264F\u5217\u8868 : \u81EA\u52A8\u5237\u65B0\u5217\u8868\u548C\u6587\u5B57\u5185\u5BB9\n\n\u264F\u8BBE\u7F6E : \u652F\u6301\u4E2D\u82F1\u754C\u9762\u5207\u6362\uFF0C\u81EA\u5B9A\u4E49\u5207\u6362\u8868\u8FBE\u5F0F\u6587\u4EF6\u5939\n\n\u264F\u5E2E\u52A9 : \u60AC\u505C\u5FEB\u901F\u67E5\u770B\u63D0\u793A\n\n\u264F\u91CD\u547D\u540D : \u5FEB\u901F\u91CD\u547D\u540D\u7B14\u8BB0\u6216\u6587\u4EF6\u5939\n\n\u25B6\u7F8E\u5316 : \u83B7\u53D6\u5C5E\u6027\u8DEF\u5F84\u4EE3\u7801\n\n\u25B6\u7F8E\u5316\u9009\u9879 : \u81EA\u5B9A\u4E49\u7F8E\u5316\u89C4\u5219\n\n\u25B6\u62FE\u53D6 : \u83B7\u53D6\u5C5E\u6027\u8DEF\u5F84\u4EE3\u7801\n\n\u25B6\u5BFC\u51FA : \u5BFC\u51FA\u4EE3\u7801\u5230\u6240\u9009\u5C5E\u6027\n\n\u25B6\u5BFC\u5165 : \u5BFC\u5165\u5C5E\u6027\u8868\u8FBE\u5F0F\n\n\u25B6\u5207\u6362 : \u6FC0\u6D3B\u6216\u7981\u7528\u6240\u9009\u5C5E\u6027\u7684\u8868\u8FBE\u5F0F\n\n\u25B6\u64A4\u9500 : \u64A4\u9500\u7F8E\u5316\u6216\u5BFC\u5165\u64CD\u4F5C(\u4EC5\u4E00\u6B21)\n"
     }
   });
 }();
@@ -6382,17 +6382,20 @@ module.exports = function () {
     });
 
     win.onClose = function () {
-      try {
-        if (exp.lang !== exp.getSetting('language')) {
-          exp.saveSetting('language', exp.lang);
+      if (exp.lang !== exp.getSetting('language')) {
+        exp.saveSetting('language', exp.lang);
 
-          if (exp.win instanceof Window) {
-            exp.win.close();
-            refreshExp();
-          } else alert(loc(exp.panelStr));
+        if (exp.win instanceof Window) {
+          exp.win.close();
+          refreshExp();
+        } else {
+          try {
+            app.executeCommand(app.findMenuCommandId('ExpNotes.jsx'));
+            app.executeCommand(app.findMenuCommandId('ExpNotes.jsx'));
+          } catch (err) {
+            alert(loc(exp.reloadFailed));
+          }
         }
-      } catch (err) {
-        alert('Line #' + err.line.toString() + '\r\n' + err.toString());
       }
     };
 
@@ -7586,7 +7589,7 @@ var BuildUI = function () {
 
   BuildUI.prototype.initWindow = function () {
     var self = this;
-    this.window = new Window(this.options['windowType'], this.options['scriptName'] + ' ' + this.options['version'], undefined, {
+    this.window = new Window(this.options['windowType'], this.options['scriptName'] + ' v' + this.options['version'], undefined, {
       resizeable: this.options['resizeable']
     });
 
@@ -7674,8 +7677,6 @@ module.exports = function (win, isStarting) {
   return function () {
     var latestVersion = exp.getVersion();
     var nowVersion = exp.version;
-    $.writeln(latestVersion);
-    $.writeln(nowVersion);
     var compare = exp.compareSemver(latestVersion, nowVersion);
 
     if (compare > 0) {

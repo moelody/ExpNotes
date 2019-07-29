@@ -135,16 +135,19 @@ module.exports = function() {
     })
 
     win.onClose = function() {
-      try {
-        if (exp.lang !== exp.getSetting('language')) {
-          exp.saveSetting('language', exp.lang)
-          if (exp.win instanceof Window) {
-            exp.win.close()
-            refreshExp()
-          } else alert(loc(exp.panelStr))
+      if (exp.lang !== exp.getSetting('language')) {
+        exp.saveSetting('language', exp.lang)
+        if (exp.win instanceof Window) {
+          exp.win.close()
+          refreshExp()
+        } else {
+          try {
+            app.executeCommand(app.findMenuCommandId('ExpNotes.jsx'))
+            app.executeCommand(app.findMenuCommandId('ExpNotes.jsx'))
+          } catch (err) {
+            alert(loc(exp.reloadFailed))
+          }
         }
-      } catch (err) {
-        alert('Line #' + err.line.toString() + '\r\n' + err.toString())
       }
     }
     win.center()

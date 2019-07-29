@@ -36,14 +36,14 @@ module.exports = (function() {
       return string[exp.lang]
     },
     versionUpdateInfo: {
-      ch: `表达式笔记本 ${exp.version} @忆碗牛杂面
+      ch: `表达式笔记本 v${exp.version} yfsmallmoon@忆碗牛杂面
 
->> 优化
+欢迎使用~~！
 
 `,
-      en: `ExpNotes ${exp.version} @yfsmallmoon
+      en: `ExpNotes v${exp.version} yfsmallmoon@ywnz
                     
-New Feature:
+Welcome to use~!
       
 `
     },

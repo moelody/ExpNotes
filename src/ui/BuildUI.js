@@ -51,7 +51,7 @@ var BuildUI = (function() {
   }
   BuildUI.prototype.initWindow = function() {
     var self = this
-    this.window = new Window(this.options['windowType'], this.options['scriptName'] + ' ' + this.options['version'], undefined, {
+    this.window = new Window(this.options['windowType'], this.options['scriptName'] + ' v' + this.options['version'], undefined, {
       resizeable: this.options['resizeable']
     })
     this.window.onClose = function() {

@@ -7,8 +7,6 @@ module.exports = function(win, isStarting) {
   return function() {
     var latestVersion = exp.getVersion()
     var nowVersion = exp.version
-    $.writeln(latestVersion)
-    $.writeln(nowVersion)
     var compare = exp.compareSemver(latestVersion, nowVersion)
     if (compare > 0) {
       targetAlert(loc(exp.newVersionFind) + latestVersion.toString())

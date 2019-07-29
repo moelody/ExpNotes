@@ -45,7 +45,6 @@ shift: 高级重命名面板`
     noneTip: { en: 'click to disable/enable this part', ch: '点击禁用或激活此栏' },
     exportStr: { en: 'Cancel apply expression', ch: '撤销应用的表达式' },
     undoStr: { en: 'Cancel delete expression', ch: '撤销删除的表达式' },
-    panelStr: { en: 'need to reOpen script', ch: '需要重新打开脚本' },
     advlistTip: { en: 'change mainPanel list then click can refresh this panel list catalogue', ch: '变更主面板列表后点击可刷新该面板列表目录' },
 
     /** **********************************界面信息************************************* **/
@@ -75,6 +74,7 @@ shift: 高级重命名面板`
     deleteFailed: { en: 'Delete Failed!', ch: '删除失败' },
     renameFailed: { en: 'Rename Failed!', ch: '重命名失败' },
     beautyFailed: { en: 'Beauty Failed!', ch: '美化失败' },
+    reloadFailed: { en: '自动重载失败，你改过脚本名字吧?', ch: 'reload failed do you changed script name?' },
     optionsErr: { en: 'Unknown options setting', ch: '未知的选项设置' }
   })
   exp.extend({
@@ -101,6 +101,8 @@ shift: 高级重命名面板`
       en: `Made by: yf
 E-mail: yfsmallmoon@gmail.com
 Source Code: github.com/liuyingxuanlv
+
+change language support autoreload
 
 ♏switch : quick switch XMP/File source mode
 
@@ -138,6 +140,8 @@ Source Code: github.com/liuyingxuanlv
       ch: `作者: yf(忆碗牛杂面)
 邮箱: yfsmallmoon@gmail.com
 源码托管地址: github.com/liuyingxuanlv
+
+改变语言支持自动重载
 
 ♏切换 : 快速切换XMP/文件资源模式
 
