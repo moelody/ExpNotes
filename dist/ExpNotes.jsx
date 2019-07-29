@@ -7358,7 +7358,8 @@ module.exports = function () {
 
     pal.grp.viaScript.viaScriptCode.text = scriptCode;
     exp.beautyBefore = exp.edittext.text;
-    pal.grp.viaExpr.viaExprCode.text = exp.edittext.text = exprCode;
+    exp.edittext.text = exp.edittext.text + exprCode;
+    pal.grp.viaExpr.viaExprCode.text = exprCode;
   } // rd_GimmePropPath_doGetPropPath()
   // 
   // Description:
