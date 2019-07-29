@@ -1,4 +1,4 @@
-<p align="center"><img src="https://i.loli.net/2019/07/28/5d3d0b6ec465067664.png" alt="CAFX"/>
+<p align="center"><img width="140px" src="https://i.loli.net/2019/07/28/5d3d0b6ec465067664.png" alt="CAFX"/>
 
 # ExpNotes
 
@@ -7,7 +7,7 @@
 Quick edit expression and save to file for after effects
 快速编辑表达式并储存为文件的 ae 脚本
 
-<p align="center"><img src="http://ww1.sinaimg.cn/large/006gWwF3gy1g5h3g7su41j30gn09a3yu.jpg"alt="CAFX"/>
+<p align="left"><img src="http://ww1.sinaimg.cn/large/006gWwF3gy1g5h3g7su41j30gn09a3yu.jpg"alt="CAFX"/>
 
 ## Script function 脚本功能
 
